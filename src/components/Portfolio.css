@@ -1,5 +1,5 @@
 #Portfolio {
-    padding-top: 25px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,14 +14,21 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 50px;
+    margin-top: 20px;
 }
 
-#glr .img {
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 5px rgba(0,0,0,.5);
+#glr .container {
+    max-width: 350px;
+    margin: 0 10px;
+}
+
+.container img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.img {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }

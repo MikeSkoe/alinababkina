@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import '../App.css';
 import './Head.css';
 
-import Portfolio from './Portfolio';
-
 export default class Head extends Component {
     render () {
         return (
-            <div className="Head">
+            <div className="Head img">
                 <div className="btns">
                     <button type="button" className="btn">портфолио</button>
                     <button type="button" className="btn">о дизайнере</button>

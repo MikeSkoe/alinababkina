@@ -6,21 +6,25 @@ const styling = {
     marginTop: '5px'
 }
 
-function backImg (url) {
-    return {
-        background: `url(${url})`
-    }
-}
-
 const images = [
-    'http://www.momentumauctions.com/wp-content/uploads/2017/09/Kiev_Apt_MARTIN_architects_1.0.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/new-picture-interior-design-photos-interior-home-design-ideas-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-you-wont-believe-this-home-is-only-1100-square-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-ideas-for-your-modern-home-design-milk-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-mybktouch-within-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-modern-bathroom-bath-chair-design-intended-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/03/hiring-an-interior-designer-interior-design-7-ideas-of-hire-intended-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
-    'http://mybktouch.com/wp-content/uploads/2017/07/Modern-Kitchen-Designs.jpg'
+    {
+        title: 'First one',
+        describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
+        url: 'http://www.momentumauctions.com/wp-content/uploads/2017/09/Kiev_Apt_MARTIN_architects_1.0.jpg',
+    }, {
+        title: 'Second one',
+        describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
+        url: 'http://mybktouch.com/wp-content/uploads/2017/03/new-picture-interior-design-photos-interior-home-design-ideas-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+    }, {
+        title: 'Third one',
+        describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
+        url: 'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-you-wont-believe-this-home-is-only-1100-square-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+    }
+//    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-ideas-for-your-modern-home-design-milk-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+//    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-mybktouch-within-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+//    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-modern-bathroom-bath-chair-design-intended-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+//    'http://mybktouch.com/wp-content/uploads/2017/03/hiring-an-interior-designer-interior-design-7-ideas-of-hire-intended-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+//    'http://mybktouch.com/wp-content/uploads/2017/07/Modern-Kitchen-Designs.jpg',
 //    'http://mybktouch.com/wp-content/uploads/2017/07/floor-Modern-Kitchen-Designs.jpg'
 ]
 
@@ -32,8 +36,14 @@ export default class Portfolio extends Component {
                 <p style={styling}>Коллекция моих лучших работ</p>
                 <div id="glr">
                 {
-                    images.map(img => {
-                        return <div className="img"><img url={img}/></div>
+                    images.map((img, index) => {
+                        return (
+                        <div className="container">
+                            <img src={img.url}/>
+                            <b>{img.title}</b>
+                            <p>{img.describtion}</p>
+                        </div>
+                        )
                     })
                 }
                 </div>
