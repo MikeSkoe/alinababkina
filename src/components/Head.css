@@ -1,0 +1,45 @@
+.Head {
+    background: url(http://cdn.home-designing.com/wp-content/uploads/2015/05/white-interior.png);
+    background-size: cover;
+    background-position: center;
+    background-origin: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+.Head div:nth-child(2) {
+    margin: 10vh 0;
+    padding: 0 12px;
+    text-align: center;
+    border: 2px white solid;
+}
+
+.Head div:nth-child(2) p{
+    letter-spacing: .4rem;
+    margin-bottom: .2rem;
+    font-size: .9rem;
+}
+
+.Head div:nth-child(2) h1{
+    margin-top: .2rem;
+}
+
+.Head .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Head .btns :nth-child(1){
+    flex-grow: 10;
+}
+
+.Head .btns :nth-child(2){
+    flex-grow: 0;
+}
+
+.Head .btns :nth-child(3){
+    flex-grow: 10;
+}
