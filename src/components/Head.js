@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import '../App.css';
 import './Head.css';
+import { Link } from 'react-router-dom';
 
 export default class Head extends Component {
     render () {
         return (
             <div className="Head img">
-                <div className="btns">
-                    <button type="button" className="btn">портфолио</button>
-                    <button type="button" className="btn">о дизайнере</button>
-                    <button type="button" className="btn">контакты</button>
-                </div>
                 <div>
                     <h1>Алина Бабкина</h1>
-                    <p>дизайнер интерьера</p>
+                    <p>дизайн интерьера</p>
+                </div>
+                <div className="btns">
+                    <Link to='/' className="btn">портфолио</Link>
+                    <Link to='/about' className="btn">о дизайнере</Link>
+                    <Link to='/' className="btn">контакты</Link>
                 </div>
             </div>
         )

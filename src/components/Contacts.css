@@ -1,0 +1,25 @@
+#Contacts {
+    background: rgb(200,200,200);
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contacts div:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#Contacts p {
+    color: rgba(0,0,0,.5);
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+#Contacts p:last-child {
+    margin-bottom: 20px;
+}

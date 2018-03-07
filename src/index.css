@@ -1,14 +1,21 @@
 body {
-  background: gray;
+  background: rgb(200,200,200);
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
+  width: 100%;
+}
+
+html {
+  width: 100%
 }
 
 .btn {
+  width: 100%;
   padding: 5px 0;
   background: none;
-  color: white;
+  color: black;
   font-size: 1.1rem;
   border: none;
+  text-decoration: none;
 }

@@ -1,0 +1,14 @@
+#avatar {
+    background-image: url(https://pp.userapi.com/c824410/v824410679/c5139/_Wc1THu5C7s.jpg);
+    background-size: 150%;
+    background-position-x: 80%;
+    background-position-y: 60%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.container {
+    margin-top: 50px;
+}

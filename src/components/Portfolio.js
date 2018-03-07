@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import './Portfolio.css';
 
-const styling = {
-    color: 'gray',
-    marginTop: '5px'
-}
-
 const images = [
     {
         title: 'First one',
@@ -31,15 +26,14 @@ const images = [
 export default class Portfolio extends Component {
     render () {
         return (
-            <div id="Portfolio">
-                <h3>Галерея работ</h3>
-                <p style={styling}>Коллекция моих лучших работ</p>
+            <div id="Portfolio" className="title">
+                <h3><span>Портфолио</span></h3>
                 <div id="glr">
                 {
                     images.map((img, index) => {
                         return (
-                        <div className="container">
-                            <img src={img.url}/>
+                        <div className="container" key={index}>
+                            <img alt={`img${index}`} src={img.url}/>
                             <b>{img.title}</b>
                             <p>{img.describtion}</p>
                         </div>

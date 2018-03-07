@@ -4,7 +4,7 @@ import './App.css';
 
 //  Import Components
 import Head from './components/Head';
-import Portfolio from './components/Portfolio';
+import Main from './components/Main';
 import Contacts from './components/Contacts';
 
 class App extends Component {
@@ -17,9 +17,9 @@ class App extends Component {
   render() {
     return (
       <div className="App-container">
-        <Head/>
-        <Portfolio/>
-        <Contacts/>
+          <Head/>
+          <Main/>
+          <Contacts/>
       </div>
     );
   }

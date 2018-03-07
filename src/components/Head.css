@@ -1,26 +1,26 @@
 .Head {
-    background-image: url(http://cdn.home-designing.com/wp-content/uploads/2015/05/white-interior.png);
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    color: black;
     font-size: .9rem;
 }
-.Head div:nth-child(2) {
-    margin: 15vh 0;
+.Head div:nth-child(1) {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
     padding: 0 12px;
     text-align: center;
-    border: 2px white solid;
+    border: 2px black solid;
 }
 
-.Head div:nth-child(2) p{
+.Head div:nth-child(1) p{
     letter-spacing: .4rem;
     margin-bottom: .2rem;
     font-size: .9rem;
 }
 
-.Head div:nth-child(2) h1{
+.Head div:nth-child(1) h1{
     margin-top: .2rem;
 }
 
@@ -28,17 +28,25 @@
     margin-top: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.Head .btns :nth-child(1){
+.Head .btns .btn {
+    text-align: center;
+    max-width: 150px;
+    font-size: .95rem;
+}
+
+.Head .btns .btn:nth-child(1){
     flex-grow: 10;
 }
 
-.Head .btns :nth-child(2){
+.Head .btns .btn:nth-child(2){
     flex-grow: 0;
+    border-left: 1px rgb(200,200,200) solid;
+    border-right: 1px rgb(200,200,200) solid;
 }
 
-.Head .btns :nth-child(3){
+.Head .btns .btn:nth-child(3){
     flex-grow: 10;
 }
