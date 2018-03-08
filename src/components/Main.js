@@ -9,9 +9,9 @@ export default class Main extends React.Component {
     render() {
         return (
             <Switch>
-                <Route exact path={'/'} component={Portfolio}/>
-                <Route path={'/about'} component={About}/>
-                <Route path={'/contacts'} component={Contactme}/>
+                <Route exact path={process.env.PUBLIC_URL + '/'} component={Portfolio}/>
+                <Route path={process.env.PUBLIC_URL + '/about'} component={About}/>
+                <Route path={process.env.PUBLIC_URL + '/contacts'} component={Contactme}/>
             </Switch>
         )
     }
