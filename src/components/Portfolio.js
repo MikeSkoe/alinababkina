@@ -5,15 +5,15 @@ const images = [
     {
         title: 'First one',
         describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
-        url: 'http://www.momentumauctions.com/wp-content/uploads/2017/09/Kiev_Apt_MARTIN_architects_1.0.jpg',
+        url: 'https://cdn.vox-cdn.com/thumbor/dNpPmyTlFAhfMO114LV5-TgxJ2c=/0x0:1280x779/1200x800/filters:focal(538x288:742x492)/cdn.vox-cdn.com/uploads/chorus_image/image/54681785/Kiev_Apt_MARTIN_architects_1.0.jpg',
     }, {
         title: 'Second one',
         describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
-        url: 'http://mybktouch.com/wp-content/uploads/2017/03/new-picture-interior-design-photos-interior-home-design-ideas-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+        url: 'https://images.homify.com/images/a_0,c_fill,f_auto,h_900,q_auto,w_1920/v1438886046/p/photo/image/402660/notting_hill_-_living_room/classic-living-room-photos-by-lli-design.jpg',
     }, {
         title: 'Third one',
         describtion: 'lorem ipsum somethign else to say that this one is very important one in the world, beatch',
-        url: 'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-you-wont-believe-this-home-is-only-1100-square-for-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
+        url: 'https://i.ytimg.com/vi/rMxTreSFMgE/maxresdefault.jpg',
     }
 //    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-ideas-for-your-modern-home-design-milk-in-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',
 //    'http://mybktouch.com/wp-content/uploads/2017/03/interior-design-mybktouch-within-interior-design-decorating-open-interior-design-with-decorative-wall-divider.jpg',

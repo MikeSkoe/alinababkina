@@ -12,9 +12,9 @@ export default class Head extends Component {
                     <p>дизайн интерьера</p>
                 </div>
                 <div className="btns">
-                    <Link to='/' className="btn">портфолио</Link>
-                    <Link to='/about' className="btn">о дизайнере</Link>
-                    <Link to='/' className="btn">контакты</Link>
+                    <Link to={'/'} className="btn">портфолио</Link>
+                    <Link to={'/about'} className="btn">о дизайнере</Link>
+                    <Link to={'/contacts'} className="btn">контакты</Link>
                 </div>
             </div>
         )
